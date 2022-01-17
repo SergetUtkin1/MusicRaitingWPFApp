@@ -1,0 +1,46 @@
+﻿<Window x:Class="MusicRaiting.AddingWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicRaiting"
+        mc:Ignorable="d"
+        Title="AddingWin" MinHeight="480" MinWidth="640" FontFamily="Segoe UI Light" WindowStartupLocation="CenterScreen" Foreground="Snow">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#2193b0" Offset="0.5"/>
+            <GradientStop Color="#6dd5ed" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.ColumnSpan="4" Text="Добавление" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45"/>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="Исполнитель" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="35"/>
+        <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Text="Название Трека" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="35"/>
+
+        <ComboBox Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom" Height="30">
+            <ComboBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </ComboBox.Background>
+        </ComboBox>
+        <TextBox Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" Height="30" Foreground="White" BorderBrush="White" SelectionBrush="#FF00D7A6">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.1"/>
+            </TextBox.Background>
+        </TextBox>
+    </Grid>
+</Window>
