@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MusicRaiting"
         mc:Ignorable="d"
-        Title="CheckWin" MinHeight="480" MinWidth="640" FontFamily="Segoe UI Light" WindowStartupLocation="CenterScreen">
+        Title="" MinHeight="480" MinWidth="640" FontFamily="Segoe UI Light" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#2193b0" Offset="0.5"/>
