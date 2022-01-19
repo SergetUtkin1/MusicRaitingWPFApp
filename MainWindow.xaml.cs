@@ -24,5 +24,19 @@ namespace MusicRaiting
         {
             InitializeComponent();
         }
+
+        private void ToAddWin_Click(object sender, RoutedEventArgs e)
+        {
+            AddingWin win = new AddingWin();
+            win.Show();
+            Close();
+        }
+
+        private void ToCheckWin_Click(object sender, RoutedEventArgs e)
+        {
+            CheckMus win = new CheckMus();
+            win.Show();
+            Close();
+        }
     }
 }
