@@ -15,26 +15,21 @@ using System.Windows.Shapes;
 namespace MusicRaiting
 {
     /// <summary>
-    /// Логика взаимодействия для AddingWin.xaml
+    /// Логика взаимодействия для AddAuthor.xaml
     /// </summary>
-    public partial class AddingWin : Window
+    public partial class AddAuthor : Window
     {
-        public AddingWin()
+        public AddAuthor()
         {
             InitializeComponent();
         }
 
-        private void AddTreckButton_Click(object sender, RoutedEventArgs e)
+        private void BackToAddTrack_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void GoToAddAuthorButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        private void AddNewAuthor_Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

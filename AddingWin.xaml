@@ -35,13 +35,13 @@
         <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Text="Название Трека" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="35"/>
         <TextBlock Grid.Row="3" Grid.ColumnSpan="2" Text="Рейтинг" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="35"/>
 
-        <ComboBox Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom" Height="30">
+        <ComboBox x:Name="Author_ComboBox" Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom" Height="30">
             <ComboBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.5"/>
             </ComboBox.Background>
         </ComboBox>
         
-        <TextBox Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" Height="30" Foreground="White" BorderBrush="White" SelectionBrush="#FF00D7A6">
+        <TextBox x:Name="TrackName_TextBox" Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" Height="30" Foreground="White" BorderBrush="White" SelectionBrush="#FF00D7A6">
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.1"/>
             </TextBox.Background>
@@ -49,19 +49,19 @@
 
         <Slider x:Name="RaitSlider" Maximum="10" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" AutoToolTipPlacement="BottomRight"/>
 
-        <Button Grid.Column="2" Grid.Row="4" Content="Добавить" Foreground="Snow" BorderBrush="#FFFBF9F9" Padding="1" Margin="0,15">
+        <Button x:Name="AddTreckButton" Click="AddTreckButton_Click" Grid.Column="2" Grid.Row="4" Content="Добавить" Foreground="Snow" BorderBrush="#FFFBF9F9" Padding="1" Margin="0,15">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.01"/>
             </Button.Background>
         </Button>
 
-        <Button Grid.Column="3" Grid.Row="6" Content="Добавить Исполнителя" Foreground="Snow" BorderBrush="#FFFBF9F9" Padding="1" Margin="0,15,15,15">
+         <Button x:Name="GoToAddAuthorButton" Click="GoToAddAuthorButton_Click" Grid.Column="3" Grid.Row="6" Content="Добавить Исполнителя" Foreground="Snow" BorderBrush="#FFFBF9F9" Padding="1" Margin="0,15,15,15">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.01"/>
             </Button.Background>
         </Button>
 
-        <Button Grid.Column="0" Grid.Row="6" Content="Назад" Foreground="Snow" BorderBrush="#FFFBF9F9" Padding="1" Margin="15,15,0,15">
+        <Button x:Name="BackToMain" Click="BackToMain_Click" Grid.Column="0" Grid.Row="6" Content="Назад" Foreground="Snow" BorderBrush="#FFFBF9F9" Padding="1" Margin="15,15,0,15">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.01"/>
             </Button.Background>
